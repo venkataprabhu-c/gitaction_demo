@@ -1,0 +1,17 @@
+name: Demo workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: statement 1
+        run: echo Hello, world!
+      - name: statement 2
+        run: |
+          echo test your workflow,
+          echo test, and deploy your project.
+     
+      - uses: actions/checkout@v4
+
+     
+     
