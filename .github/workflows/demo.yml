@@ -11,9 +11,9 @@ jobs:
           echo test your workflow,
           echo test, and deploy your project.
       - name: install java     
-        uses: actions/setup-java@v5.1.0
+        uses: actions/setup-java@v4
         with: 
-          java-version: "21"
+          java-version: "11"
       - name: test java version
         run: java --version
 
