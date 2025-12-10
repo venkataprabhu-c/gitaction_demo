@@ -9,11 +9,12 @@ jobs:
       - name: statement 2
         run: |
           echo test your workflow,
-          echo test, and deploy your project.
-      - name: install java     
+          echo test, and deploy your project.   
+      - name: setup java     
         uses: actions/setup-java@v4
         with: 
-          java-version: "11"
+          java-version: "17"
+          distribution: 'temurin'
       - name: test java version
         run: java --version
 
